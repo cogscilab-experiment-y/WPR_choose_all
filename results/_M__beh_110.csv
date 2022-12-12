@@ -1,0 +1,5 @@
+idx;n;size;block_type;rt;acc;correct_answers;number_of_answers;answer;stimulus
+0;2;[3, 3];training;2.6182502000010572;1.0;2;2;['images\\all_png\\21_2.png', 'images\\all_png\\23_2.png'];['images\\all_png\\23_2.png', 'images\\all_png\\21_2.png']
+1;2;[3, 3];training;1.0569457999954466;0.5;1;1;['images\\all_png\\17_2.png'];['images\\all_png\\17_2.png', 'images\\all_png\\23_2.png']
+2;2;[3, 3];training;2.4468425000086427;0.5;1;2;['images\\all_png\\17_2.png', 'images\\all_png\\22_2.png'];['images\\all_png\\17_2.png', 'images\\all_png\\23_2.png']
+3;2;[3, 3];training;;-1;0;0;[];['images\\all_png\\21_2.png', 'images\\all_png\\10_2.png']
