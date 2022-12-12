@@ -1,0 +1,82 @@
+procedure_test: False
+
+# main visual parameters
+screen_color: grey
+text_color: black
+text_size: 28
+
+stimulus_dist: 60
+stimulus_size: 53
+stimulus_color: black
+stimulus_central_pos: [0, 0]
+stimulus_border_color: green
+stimulus_border_width: 6
+
+# stimulus
+stimulus_type: image
+stimulus_list: [10_2.png, 17_2.png, 18_2.png, 20_2.png, 21_2.png, 22_2.png, 23_2.png, 24_2.png, 25_2.png]
+
+# reactions
+reaction_keys: {left: True, right: False} # True - element was changed, False - there were no changes
+
+# time parameters
+matrix_1_time: 5
+mask_time: 5
+matrix_2_time: 5
+
+# training
+do_training: True
+fdbk_training: True
+training_randomize: False
+training_trials: [{n_trials: 2, n_elements: 2, size: [3, 3], group_elements: True},
+                  {n_trials: 2, n_elements: 4, size: [3, 3], group_elements: True},
+                  {n_trials: 2, n_elements: 6, size: [3, 3], group_elements: True}]
+
+
+# experiment
+fdbk_experiment: False
+experiment_randomize: False
+experiment_trials: [{n_trials: 20, n_elements: 2, size: [3, 3], group_elements: True},
+                    {n_trials: 20, n_elements: 4, size: [3, 3], group_elements: True},
+                    {n_trials: 20, n_elements: 6, size: [3, 3], group_elements: True}]
+
+
+# fixation point
+fixation_size: 56
+fixation_color: black
+fixation_text: +
+fixation_time: 2
+fixation_pos: [0, 0]
+
+# mask
+extra_mask_size: 0
+mask_pos: [0, 0]
+
+# feedback
+fdbk_correctness_male: Zaznaczyłeś {} z {} poprawnych odpowiedzi
+fdbk_correctness_female: Zaznaczyłaś {} z {} poprawnych odpowiedzi
+fdbk_no_answer: Brak odpowiedzi
+fdbk_show_time: 2
+fdbk_color: black
+fdbk_size: 30
+
+# wait
+wait_time: 1.5
+wait_jitter: 1
+
+
+# show extra text during trial
+extra_text_to_show: [] # [{pos: [-270, -250], color: black, size: 40, text: "wprowadź odpowiedź:"},
+                       #  {pos: [450, -350], color: black, size: 30, text: "zatwierdź enter"}]
+
+# clock
+show_clock: false
+clock_pos: [450, 350]
+clock_size: 60
+clock_show_time: 7
+
+# timer
+show_timer: false
+timer_pos: [600, 350]
+timer_color: black
+timer_size: 60
