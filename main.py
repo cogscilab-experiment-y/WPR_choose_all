@@ -114,6 +114,7 @@ def main():
     screen_res = dict(get_screen_res())
     win = visual.Window(list(screen_res.values()), fullscr=True, units='pix', screen=0, color=config["screen_color"])
     mouse = event.Mouse()
+    mouse.setVisible(False)
 
     clock = core.Clock()
 
